@@ -1,10 +1,7 @@
-# Water_bill.py
+# water_calculator.py
 
-# ตัวอย่างการส่งค่า
-def calculate_water_bill(water_usage, price_per_unit):
-    sum_water = water_usage * price_per_unit
-    print(f"Total water bill: {sum_water} baht")
-    return sum_water
+def calculate_water_bill(volume_used, price_per_cubic_meter):
+    # คำนวณค่าใช้น้ำจากจำนวนที่ใช้ (ลบค่าเป็นเมตร)
+    total_cost = volume_used * price_per_cubic_meter
+    return total_cost
 
-# Example usage
-#calculate_water_bill(30, 10)  # ส่งค่าการใช้น้ำเป็น 30 หน่วย และราคาต่อหน่วย 10 บาท
