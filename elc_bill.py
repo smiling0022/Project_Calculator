@@ -1,3 +1,4 @@
+# Electricity_bill.py
 
 def calculate_electricity_bill(power_watt, hours_per_day, days, price_per_unit, ft_rate, quantity):
     # คำนวณจำนวนกิโลวัตต์ชั่วโมงที่ใช้
