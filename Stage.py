@@ -65,3 +65,13 @@ if st.button("คำนวณค่าน้ำ"):
     # เรียกใช้ฟังก์ชันที่ถูกต้องเพื่อคำนวณค่าน้ำ
     total_water_cost = calculate_water_bill(volume_used, price_per_cubic_meter)
     st.write(f"ค่าน้ำรวม: {total_water_cost:.2f} บาท")
+
+# ส่วนสำหรับคำนวณค่าใช้จ่ายและเงินเดือน
+st.subheader("คำนวณเงินเดือนหลังหักค่าใช้จ่าย")
+rent = st.number_input("กรอกค่าเช่าบ้าน (บาท)", min_value=0.0, value=5000.0, step=100.0)
+salary = st.number_input("กรอกเงินเดือน (บาท)", min_value=0.0, value=30000.0, step=100.0)
+
+if st.button("คำนวณเงินเหลือ"):
+    total_expenses = total_cost_with_ft_all + total_water_cost + rent
+    remaining_money = salary - total_expenses
+    st.write(f"ยอดเงินเหลือหลังจากหักค่าใช้จ่ายทั้งหมด: {remaining_money:.2f} บาท")
