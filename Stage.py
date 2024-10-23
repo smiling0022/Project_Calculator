@@ -5,7 +5,7 @@ from Water_bill import calculate_water_bill  # ฟังก์ชันการ
 # กำลังไฟของเครื่องใช้ไฟฟ้าเป็นวัตต์
 appliances = {
     "พัดลม": 75,
-    "ตู้เย็น": 150,
+    "ตู้เย็น": 70,
     "ทีวี": 100,
     "เครื่องปรับอากาศ": 1500,
     "เครื่องซักผ้า": 500,
@@ -25,7 +25,7 @@ if 'appliance_counts' not in st.session_state:
     st.session_state.appliance_days = {appliance: 1 for appliance in appliances.keys()}  # ตั้งค่าเริ่มต้นเป็น 1
 
 # แสดงชื่อโปรแกรม
-st.title("โปรแกรมคำนวณค่าไฟฟ้าและค่าน้ำ พร้อมค่าเช่าบ้าน")
+st.title("RentSmart")
 
 # ส่วนสำหรับคำนวณค่าไฟฟ้าและค่าน้ำ
 st.subheader("คำนวณค่าไฟฟ้า (รวมค่า FT) และค่าน้ำ")
