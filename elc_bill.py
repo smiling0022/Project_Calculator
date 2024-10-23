@@ -12,3 +12,5 @@ def calculate_electricity_bill(power_watt, hours_per_day, days, price_per_unit, 
     
     # รวมค่าใช้จ่ายกับค่า FT
     total_cost_with_ft = total_cost + ft_cost
+    
+    return total_cost_with_ft, total_cost, ft_cost
